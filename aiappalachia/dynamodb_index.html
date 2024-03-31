@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Research Fields</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Function to load AI Research Fields from your API
+            function loadResearchFields() {
+                $.ajax({
+                    url: 'https://0snsjba3ia.execute-api.us-east-1.amazonaws.com/prod', // Replace with your API Gateway endpoint URL
+                    type: 'GET',
+                    success: function(response) {
+                        const fields = JSON.parse(response.body);
+                        fields.forEach(function(field) {
+                            $('#researchFields').append('<h3>' + field + '</h3><div><p>Some content about ' + field + '.</p></div>');
+                        });
+                        // Initialize or refresh your accordion here
+                    },
+                    error: function(err) {
+                        console.log('Error:', err);
+                    }
+                });
+            }
+
+            loadResearchFields();
+        });
+    </script>
+</head>
+<body>
+    <h1>AI Research Fields</h1>
+    <div id="researchFields">
+        <!-- AI Research Fields will be loaded here -->
+    </div>
+</body>
+</html>

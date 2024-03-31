@@ -1,0 +1,19 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.hero {
+    height: 100vh; /* Full height */
+    background-image: url('https://aiappalachia-assets.s3.amazonaws.com/images/homepagebackground.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; /* Choose a text color that stands out */
+}
+
+/* Add additional styles for navigation, footer, etc. */

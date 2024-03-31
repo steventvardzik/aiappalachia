@@ -1,0 +1,37 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* Prevents scrolling */
+}
+
+#coming-soon {
+    display: flex;
+    align-items: center; /* Vertical alignment */
+    justify-content: center; /* Horizontal alignment */
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+    background: url('https://aiappalachia-assets.s3.amazonaws.com/images/wilderness.jpg') no-repeat center center / cover;
+    text-align: center;
+}
+
+.content {
+    color: white;
+    max-width: 600px; /* Adjust as needed */
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: for text readability */
+    border-radius: 10px; /* Optional: if you want rounded corners */
+}
+
+.content h1 {
+    font-size: 3rem; /* Large text for the heading */
+    margin-bottom: 0.5rem;
+}
+
+.content p {
+    font-size: 1.5rem; /* Smaller text for the subheading */
+    margin-bottom: 0;
+}
+
+/* Add any additional global styles here */
