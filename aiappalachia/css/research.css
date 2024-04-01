@@ -54,59 +54,45 @@ p {
     word-spacing: 0.05em;
 }
 
-.accordion-button {
-    width: 100%;
-    text-align: left;
-    padding: 15px;
-    border: none;
-    background-color: #eee;
-    cursor: pointer;
-  }
-  
+ul.clickable-list {
+    list-style-type: none;
+    padding: 0;
+}
 
-  .project-info h3 {
-    margin: 0;
-  }
-  
-  .accordion-content {
-    display: flex;
-    padding: 15px;
-    background-color: #f9f9f9;
-  }
-  
-  .project {
+ul.clickable-list li {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+ul.clickable-list li a {
     display: flex;
     align-items: center;
-    text-decoration: none; /* Remove underline from links */
-    color: inherit; /* Use the default text color */
-  }
-  
-  .project-img {
-    width: 100px;
-    margin-right: 15px;
-  }
-  
-  
-  /* Additional styles to maintain the look and feel */
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
 
-  .accordion-content-link {
-    text-decoration: none; /* Removes underline from links */
-    color: inherit; /* Inherits text color from parent */
-    display: block; /* Ensures the link occupies the full container width */
-  }
-  
-  
-  .project-thumbnail {
-    width: 100px; /* Adjust based on your preference */
+ul.clickable-list li a img {
+    width: 60px;
+    height: 60px;
+    /* border-radius: 50%; */
     margin-right: 15px;
-  }
-  
-  .project-details {
-    flex: 1; /* Ensures it takes up the remaining space */
-  }
-  
+    object-fit: contain;
+}
 
-  
-  /* Plus any additional styles for h3, p, etc., as needed. */
-  
+ul.clickable-list li a div h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+ul.clickable-list li a div p {
+    margin: 5px 0 0;
+}
+
+/* Add hover effect */
+ul.clickable-list li a:hover {
+    background-color: #f0f0f0;
+}
   
